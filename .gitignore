@@ -1,0 +1,26 @@
+# ======================
+# Spring Boot (Backend)
+# ======================
+backend/target/
+backend/*.log
+backend/.mvn/
+backend/.classpath
+backend/.project
+backend/.settings/
+
+# ======================
+# React (Frontend)
+# ======================
+frontend/node_modules/
+frontend/build/
+frontend/.env
+
+# ======================
+# Common (All Projects)
+# ======================
+.env
+*.log
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,143 @@
+.page { display: flex; flex-direction: column; }
+
+.layout { display: grid; grid-template-columns: 1fr 320px; gap: 20px; align-items: start; }
+
+.formCard {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+
+.fieldGroup { display: flex; flex-direction: column; gap: 6px; margin-bottom: 20px; }
+
+.label { font-size: 12px; font-weight: 500; color: var(--text2); letter-spacing: 0.02em; }
+.required { color: var(--red); }
+
+.inputError { border-color: var(--red) !important; }
+.errorMsg { font-size: 11px; color: var(--red); margin-top: 2px; }
+
+.sevGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+
+.sevOption {
+  display: flex; flex-direction: column; gap: 3px;
+  padding: 10px 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg3);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.sevOption:hover { border-color: var(--border2); }
+.sevOption.sevSelected {
+  border-color: var(--sev-color);
+  background: color-mix(in srgb, var(--sev-color) 8%, var(--bg3));
+}
+
+.sevLabel { font-size: 12px; font-weight: 700; letter-spacing: 0.04em; }
+.sevName  { font-size: 11px; color: var(--text2); }
+.sevDelay { font-size: 10px; color: var(--text3); }
+
+textarea {
+  font-family: var(--mono);
+  font-size: 13px;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  padding: 10px 12px;
+  outline: none;
+  resize: vertical;
+  width: 100%;
+  transition: border-color 0.15s;
+}
+textarea:focus { border-color: var(--green); }
+
+.formActions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 8px; }
+
+.btnPrimary {
+  padding: 10px 24px;
+  background: var(--green);
+  color: #0a0b0d;
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: var(--radius);
+  border: none;
+  transition: all 0.15s;
+}
+.btnPrimary:hover:not(:disabled) { background: #00f090; }
+.btnPrimary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.btnSecondary {
+  padding: 10px 20px;
+  background: var(--bg3);
+  color: var(--text2);
+  font-family: var(--mono);
+  font-size: 13px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  transition: all 0.15s;
+}
+.btnSecondary:hover { border-color: var(--border2); color: var(--text); }
+
+/* ── Info Panel ── */
+.infoPanel { display: flex; flex-direction: column; gap: 12px; }
+
+.infoCard {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+}
+
+.infoHeader {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 13px; font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.infoDesc { font-size: 12px; color: var(--text2); line-height: 1.6; margin-bottom: 14px; }
+
+.infoRows { display: flex; flex-direction: column; gap: 8px; }
+.infoRow  { display: flex; justify-content: space-between; align-items: center; font-size: 12px; }
+.infoKey  { display: flex; align-items: center; gap: 5px; color: var(--text3); }
+.infoVal  { color: var(--text); font-weight: 500; }
+
+.flowCard {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+}
+
+.flowTitle {
+  font-size: 11px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.08em; color: var(--text3); margin-bottom: 14px;
+}
+
+.flowStep {
+  display: flex; align-items: flex-start; gap: 12px;
+  margin-bottom: 14px;
+}
+.flowStep:last-of-type { margin-bottom: 0; }
+
+.flowNum {
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px; font-weight: 600; color: var(--text3);
+  flex-shrink: 0;
+}
+
+.flowLabel { font-size: 12px; font-weight: 500; color: var(--text); }
+.flowSub   { font-size: 11px; color: var(--text3); margin-top: 1px; }
+
+.flowNote {
+  display: flex; align-items: flex-start; gap: 7px;
+  margin-top: 14px; padding-top: 14px;
+  border-top: 1px solid var(--border);
+  font-size: 11px; color: var(--text3); line-height: 1.5;
+}
