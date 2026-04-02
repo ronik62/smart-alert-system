@@ -1,9 +1,9 @@
 import axios from 'axios'
 
-const BASE = import.meta.env.VITE_API_BASE_URL || '/api'
+const BASE_URL = "https://smart-alert-system.onrender.com";
 
 const api = axios.create({
-  baseURL: BASE,
+  baseURL: BASE_URL,
   headers: { 'Content-Type': 'application/json' },
   timeout: 10000,
 })
